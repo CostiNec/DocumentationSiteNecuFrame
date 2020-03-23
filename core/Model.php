@@ -40,8 +40,8 @@ abstract class Model
     {
         $modelName = get_called_class();
 
-        if(isset($modelName::$TABLE)) {
-            $tableName = $modelName::$TABLE;
+        if(defined($modelName.'::TABLE')) {
+            $tableName = $modelName::TABLE;
         } else {
             $modelName = explode('\\',$modelName)[1];
             $tableName = strtolower($modelName).'s';
@@ -54,6 +54,32 @@ abstract class Model
     {
         $instance = ConnectDb::getInstance();
         return $instance->getConnection();
+    }
+
+    public static function all()
+    {
+        $tableName = self::getTableName();
+        $conn = self::getConn();
+
+        $sql = 'SELECT * FROM '.$tableName;
+        $result = $conn->query($sql);
+
+        $responses = $result->fetchAll(PDO::FETCH_ASSOC);
+
+        $modelName = get_called_class();
+
+        $models = [];
+        $modelName = str_replace('/','\\',$modelName);
+
+        foreach ($responses as $response) {
+            $model = new $modelName($response);
+            foreach ($response as $key => $one) {
+                $model->$key = $one;
+            }
+            array_push($models, $model);
+        }
+
+        return $models;
     }
 
     public static function get($value,$key = self::PRIMARYKEY,$columns=[])
