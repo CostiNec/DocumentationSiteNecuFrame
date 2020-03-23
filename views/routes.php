@@ -21,11 +21,11 @@ $View->includeView('template.sidenav');
         <hr>
         <p>The routes system is pretty simple, you can have 2 kind of routes: post and get</p>
         <p>We have an object instantiated Route <mark> <a class="purple"> $routes </a> = <a class="orange" > new </a> Route() ;</mark></p>
-        <p>If you want a get route all you have to do is to call method get from our class <mark> <a class="purple"> $routes </a> -> <a class="yellow">get</a>(<a class="green">'/your_route'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark> </p>
-        <p>If you want a get route all you have to do is to call method get from our class <mark> <a class="purple"> $routes </a> -> <a class="yellow">post</a>(<a class="green">'/your_route'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark> </p>
+        <p>If you want a get route all you have to do is to call the method get from our class <mark> <a class="purple"> $routes </a> -> <a class="yellow">get</a>(<a class="green">'/your_route'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark> </p>
+        <p>If you want a post route all you have to do is to call the method post from our class <mark> <a class="purple"> $routes </a> -> <a class="yellow">post</a>(<a class="green">'/your_route'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark> </p>
         <p>You can also have variables in link  <mark> <a class="purple"> $routes </a> -> <a class="yellow">get</a>(<a class="green">'/{your_var}'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark> </p>
         <p>You can also have multiple variables in link  <mark> <a class="purple"> $routes </a> -> <a class="yellow">get</a>(<a class="green">'/{your_var}/{your_var2}'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark> </p>
-        <p>An very important thing, the order of your routes MATTER because we can have the following example:</p>
+        <p>A very important thing, the order of your routes MATTERS because we can have the following example:</p>
         <div class="background-mark">
             <p class="ml-3"><mark> <a class="purple"> $routes </a> -> <a class="yellow">get</a>(<a class="green">'/test1/test2'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark></p>
             <p class="ml-3"><mark> <a class="purple"> $routes </a> -> <a class="yellow">get</a>(<a class="green">'/{your_var}/{your_var2}'</a>, <a class="green">'YourController'</a>, <a class="green">'YourMethodFromController'</a>);</mark></p>

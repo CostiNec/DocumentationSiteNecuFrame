@@ -19,7 +19,7 @@ $View->includeView('template.sidenav');
     <div class="container-fluid">
         <h2>Models</h2>
         <hr>
-        <p>First of all we have to connect to our database,in your project directory you have to create a file named config.php, you have an example named config.example.php</p>
+        <p>First of all we have to connect to our database, in your project directory you have to create a file named config.php, you have an example named config.example.php</p>
         <p>If you want to create a model go in your project directory and run <mark class="background-dark color-white">php necu make:model YourModel</mark></p>
         <p>After you created your model you should have this created in your model file:</p>
         <div class="background-mark">
@@ -43,7 +43,7 @@ $View->includeView('template.sidenav');
         <p>The constant <mark><a class="purple font-italic">PRIMARYKEY</a></mark> represents the name of column that is set as primary key in your table,
          if you don't set this variable his default value is "id"(key-sensitive)</p>
         <p>The constant <mark><a class="purple font-italic">TABLE</a></mark> represent the name of your table, if you don't set this constant
-         it will be set default in this way: the name of model lowercase + 's', example: model Article means articles</p>
+         it will be set default this way: the name of model lowercase + 's', example: model Article means articles</p>
         <h2>How to use a model</h2>
         <hr>
         <p>Let's use as example the model Article</p>
@@ -103,19 +103,19 @@ $View->includeView('template.sidenav');
         <p>Usage: let's take the variable <mark><a class="purple">$model</a> = <a class="font-italic">Article::</a><a class="yellow">get</a>(<a class="blue">4</a>)[<a class="blue">0</a>] </mark></p>
         <p class="ml-4"><mark><a class="purple">$model</a>->content = <a class="green">'I'm new content here!'</a></mark> </p>
         <p class="ml-4"><mark><a class="purple">$model</a>->description = <a class="green">'I'm new description here!'</a></mark> </p>
-        <p class="ml-4"><mark><a class="purple">$model</a>->insert()</mark></p>
-        <p>This will insert a new row in your table with set values in model.</p>
+        <p class="ml-4"><mark><a class="purple">$model</a>->update()</mark></p>
+        <p>The corresponding database row will be updated.</p>
 
         <p class="mt-4"><strong>The method </strong><mark class="yellow">save()</mark></p>
-        <p>This method will insert the model if the model doesn't exist else it will update the model</p>
+        <p>This method will insert the model if the model doesn't exist, else it will update the model</p>
 
         <p class="mt-4"><strong>The method </strong><mark class="yellow">customQuery(<a class="purple">$query</a>)</mark></p>
         <p>This method will return the PDO object of a normal query</p>
         <p>Usage: <mark><a class="font-italic">Article</a>::<a class="yellow">customQuery</a>(<a class="green">'SELECT * FROM articles'</a>)</a></mark></p>
 
-        <p class="mt-4"><strong>The method </strong><mark class="yellow">customPrepareQuery(<a class="purple">$query</a>)</mark></p>
-        <p>This method will also return the PDO object of a prepare statement query.</p>
-        <p>Usage: <mark><a class="font-italic">Article</a>::<a class="yellow">customPrepareQuery</a>(<a class="green">'INSERT INTO articles (content,description) VALUES (?,?)'</a>, [ <a class="green">'insert me'</a>, <a class="green">'me too' </a>])</a></mark></p>
+        <p class="mt-4"><strong>The method </strong><mark class="yellow">customPrepareQuery(<a class="purple">$query</a>,<a class="purple">$parameters</a>)</mark></p>
+        <p>This method will also return the PDO object of a prepared statement query.</p>
+        <p>Usage: <mark><a class="font-italic">Article</a>::<a class="yellow">customPrepareQuery</a>(<a class="green">'INSERT INTO articles (content, description) VALUES (?, ?)'</a>, [ <a class="green">'insert me'</a>, <a class="green">'me too' </a>])</a></mark></p>
 
 </main>
 </body>

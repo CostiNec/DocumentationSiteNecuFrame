@@ -19,7 +19,7 @@ $View->includeView('template.sidenav');
     <div class="container-fluid">
         <h2>Views</h2>
         <hr>
-        <p>If you want to create a controller go in your project directory and run <mark class="background-dark color-white">php necu make:view view_directory.viewname</mark></p>
+        <p>If you want to create a view go in your project directory and run <mark class="background-dark color-white">php necu make:view view_directory.viewname</mark></p>
         <p>After you created your view you should have this created in your view file:</p>
         <div class="background-mark">
             <p class="green font-italic">/**</p>
@@ -32,11 +32,11 @@ $View->includeView('template.sidenav');
 
         </div>
         <p>You can include a subview using the variable <mark><a class="purple">$View</a>-><a class="yellow">includeView</a>(<a class="green">'your_view'</a>,<a class="purple">$parameters</a>)</mark></p>
-        <p>You can also see if you are on mobile,desktop or table device using de variable <mark class="purple">$isDevice</mark></p>
+        <p>You can also see if you are on mobile, desktop or tablet device using the variable <mark class="purple">$isDevice</mark></p>
         <p>Methods of <mark class="purple">$isDevice</mark></p>
         <ul>
-            <li><mark><a class="yellow">isMobile</a>()</mark> - return true if you are on mobile device, else return false</li>
-            <li><mark><a class="yellow">isTablet</a>()</mark> - return true if you are on mobile tablet, else return false</li>
+            <li><mark><a class="yellow">isMobile</a>()</mark> - returns true if you are on mobile device, else returns false</li>
+            <li><mark><a class="yellow">isTablet</a>()</mark> - returns true if you are on mobile tablet, else returns false</li>
         </ul>
         <p>Or <a target="_blank" href="http://mobiledetect.net/">Learn more about Detect Mobile...</a></p>
     </div>

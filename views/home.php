@@ -31,7 +31,7 @@ $View->includeView('template.sidenav');
             <ul>
                 <li>easy usage of route system</li>
                 <li>MVC principles</li>
-                <li>integrated options like detect mobile devices,boostrap,FEED RSS classes, jquery, fontawesome</li>
+                <li>integrated options like detect mobile devices, bootstrap, FEED RSS classes, jquery, fontawesome</li>
             </ul>
         </div>
         <h5>GitHub</h5>

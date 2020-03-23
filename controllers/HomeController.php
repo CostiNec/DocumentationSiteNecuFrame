@@ -48,4 +48,9 @@ class HomeController extends Controller
         $this->render('contact');
     }
 
+    public function options()
+    {
+        $this->render('options');
+    }
+
 }

@@ -18,7 +18,7 @@ $View->includeView('template.sidenav');
 <main class="page-content">
     <div class="container-fluid">
         <h3>You can find me on my facebook <a target="_blank" href="https://www.facebook.com/constantin.necula.58"><i class="fab fa-facebook-f"></i></a></h3>
-        <h3>You can send me mail on <i class="fas fa-at"></i> cnecula20@yahoo.ro</h3>
+        <h3>You can mail me on <i class="fas fa-at"></i> cnecula20@yahoo.ro</h3>
     </div>
 </main>
 </body>

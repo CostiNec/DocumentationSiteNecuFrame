@@ -59,6 +59,15 @@
                             <span>Contact US</span>
                         </a>
                     </li>
+                    <li class="header-menu">
+                        <span>Extra</span>
+                    </li>
+                    <li>
+                        <a href="/options" class="cursor">
+                            <i class="fas fa-cogs"></i>
+                            <span>Options</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

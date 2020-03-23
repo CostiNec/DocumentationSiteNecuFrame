@@ -16,3 +16,4 @@ $route->get('/controllers','HomeController','controllers');
 $route->get('/models','HomeController','models');
 $route->get('/views','HomeController','views');
 $route->get('/contact','HomeController','contact');
+$route->get('/options','HomeController','options');

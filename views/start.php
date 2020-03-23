@@ -23,16 +23,16 @@ $View->includeView('template.sidenav');
             <div class="form-group col-md-12">
                 <p>What you need to start:</p>
                 <ul>
-                    <li>php (at least 7.2)</li>
+                    <li>php(at least 7.2)</li>
                     <li>composer</li>
                     <li>mysql(optional)</li>
                 </ul>
                 <h5>Step 1</h5>
-                <p>&nbsp;&nbsp;&nbsp; Go on <a href="https://github.com/CostiNec/NecuFrame" target="_blank">Github</a> and download the project </p>
+                <p>&nbsp;&nbsp;&nbsp; Go on <a href="https://github.com/CostiNec/NecuFrame" target="_blank">Github</a> and download the project or you can download it by clicking <a href="/assets/storage/NecuFrame.zip">here</a> </p>
                 <h5>Step 2</h5>
                 <p>&nbsp;&nbsp;&nbsp;Run in terminal "composer install"</p>
                 <h5>Step 3</h5>
-                <p> &nbsp;&nbsp;&nbsp;Go in public directory and start server (php -S 127.0.0.1:8000)</p>
+                <p> &nbsp;&nbsp;&nbsp;Go in the public directory and start the server (php -S 127.0.0.1:8000)</p>
                 <h5>Step 4</h5>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Voilà, that's all, now you can start :)</p>
             </div>
