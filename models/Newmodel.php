@@ -4,11 +4,11 @@ namespace models;
 use core\Model;
 
 /**
- * static PRIMARYKEY = 'ID';
+ * protected $primaryKey = 'ID';
  * const TABLE = 'table_name';(default is strtolower(model_name).'s' ex Article => articles
  */
 
-class Article extends Model
+class Newmodel extends Model
 {
-    protected $columns = ['ID','content','description'];
+    protected $columns = ['YOUR_COLUMNS'];
 }

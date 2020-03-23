@@ -9,61 +9,46 @@ use core\View;
 use Detection\MobileDetect;
 
 $View->includeView('template.head');
-
+$View->includeView('template.sidenav');
 ?>
 
 <body id="page-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start with NecuFramework</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
-
-<section id="about" class="mt-4">
-    <div class="container">
+<main class="page-content">
+    <div class="container-fluid">
+        <h2>NecuFramework</h2>
+        <hr>
         <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>About NecuFramework</h2>
-                <p class="lead">NecuFramework is a custom MVC that is easy to use. This framework was developed for personal projects and it can be used for a lot of things and will probably be perfect for your project. There is what you need to start with this framework:</p>
-                <ul>
-                    <li>php(minimun version 7.2)</li>
-                    <li>composer</li>
-                    <li>mysql(optional)</li>
-                </ul>
+            <div class="form-group col-md-12">
+                <p>NecuFramework is a custom MVC that is easy to use. This framework was developed for personal projects and it can be used for a lot of things and will probably be perfect for your project</p>
+                <p> You can find the complete code on <a href="https://github.com/CostiNec/NecuFrame" target="_blank">
+                        Github</a></p>
+            </div>
+        </div>
+        <h2>What NecuFrame offers</h2>
+        <hr>
+        <div class="row">
+            <ul>
+                <li>easy usage of route system</li>
+                <li>MVC principles</li>
+                <li>integrated options like detect mobile devices,boostrap,FEED RSS classes, jquery, fontawesome</li>
+            </ul>
+        </div>
+        <h5>GitHub</h5>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card rounded-0 p-0 shadow-sm">
+                    <img src="/assets/img/logo.png" class="card-img-top rounded-0" alt="Angular pro sidebar">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Custom MVC NecuFrame</h6>
+                        <a href="https://github.com/CostiNec/NecuFrame" target="_blank" class="btn btn-primary btn-sm">Github</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</main>
 
-<section id="services" class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>What NecuFrame offers</h2>
-                <ul>
-                    <li>easy usage of route system</li>
-                    <li>MVC principles</li>
-                    <li>integrated options like detect mobile devices,boostrap,FEED RSS classes, etc</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>Contact us</h2>
-                <p class="lead">email: cnecula20@yahoo.ro</p>
-                <p class="lead">facebook: https://www.facebook.com/constantin.necula.58</p>
-            </div>
-        </div>
-    </div>
-</section>
 </body>
+</div>

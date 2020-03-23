@@ -17,4 +17,35 @@ class HomeController extends Controller
     {
         $this->render('home');
     }
+
+    public function start()
+    {
+        $this->render('start');
+    }
+
+    public function routes()
+    {
+        $this->render('routes');
+    }
+
+    public function controllers()
+    {
+        $this->render('controllers');
+    }
+
+    public function models()
+    {
+        $this->render('models');
+    }
+
+    public function views()
+    {
+        $this->render('views');
+    }
+
+    public function contact()
+    {
+        $this->render('contact');
+    }
+
 }
