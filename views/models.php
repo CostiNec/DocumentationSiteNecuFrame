@@ -19,6 +19,7 @@ $View->includeView('template.sidenav');
     <div class="container-fluid">
         <h2>Models</h2>
         <hr>
+        <p>First of all we have to connect to our database,in your project directory you have to create a file named config.php, you have an example named config.example.php</p>
         <p>If you want to create a model go in your project directory and run <mark class="background-dark color-white">php necu make:model YourModel</mark></p>
         <p>After you created your model you should have this created in your model file:</p>
         <div class="background-mark">
