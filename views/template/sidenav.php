@@ -1,6 +1,14 @@
+<?php
+/**
+ * @var $View View
+ * @var $isDevice MobileDetect
+ */
+use Detection\MobileDetect;
+?>
+
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-<div class="page-wrapper chiller-theme toggled">
+<div class="page-wrapper chiller-theme <?=(!$isDevice->isMobile()) ? 'toggled' : ''?>">
     <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
         <i class="fas fa-bars"></i>
     </a>
