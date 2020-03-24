@@ -1,7 +1,6 @@
 {
   "require": {
     "maximebf/debugbar": "^1.15",
-    "mongodb/mongodb": "1.2",
     "imagine/imagine": "^1.2",
     "mindscape/raygun4php": "^1.8",
     "ext-SPL": "*",
@@ -18,7 +17,6 @@
     "ext-json": "*",
     "twbs/bootstrap": "4.4.1",
     "mobiledetect/mobiledetectlib": "^2.8",
-    "symfony/console": "2.6.7",
-    "twig/twig": "^3.0"
+    "symfony/console": "2.6.7"
   }
 }
