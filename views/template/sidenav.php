@@ -22,8 +22,8 @@ use Detection\MobileDetect;
             </div>
             <div class="sidebar-header">
                 <div class="user-pic">
-                    <img class="img-responsive img-rounded" src="/assets/img/logo.png"
-                         alt="User picture">
+                    <a href="/"><img class="img-responsive img-rounded" src="/assets/img/logo.png"
+                         alt="User picture"></a>
                 </div>
             </div>
             <!-- sidebar-header  -->
