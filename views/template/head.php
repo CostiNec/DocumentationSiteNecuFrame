@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css"
     <link href="https://fonts.googleapis.com/css?family=Raleway:500i&display=swap" rel="stylesheet">
 
+    <link rel="icon" size="100" href="/assets/img/metaimg.png" type="image/png">
+
     <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/script.js"></script>
 
